@@ -1,5 +1,7 @@
 package controller
 
+var public_url = "http://106.14.140.109:8080/public/"
+
 type Response struct {
 	StatusCode int32  `json:"status_code"`
 	StatusMsg  string `json:"status_msg,omitempty"`
@@ -13,6 +15,7 @@ type Video struct {
 	FavoriteCount int64  `json:"favorite_count,omitempty"`
 	CommentCount  int64  `json:"comment_count,omitempty"`
 	IsFavorite    bool   `json:"is_favorite,omitempty"`
+	Title         string `json:"title,omitempty"`
 }
 
 type Comment struct {
@@ -32,8 +35,10 @@ type User struct {
 
 type Message struct {
 	Id         int64  `json:"id,omitempty"`
+	ToUserId   int64  `json:"to_user_id,omitempty"`
+	FromUserId int64  `json:"from_user_id,omitempty"`
 	Content    string `json:"content,omitempty"`
-	CreateTime string `json:"create_time,omitempty"`
+	//CreateTime string `json:"create_time,omitempty"`
 }
 
 type MessageSendEvent struct {
