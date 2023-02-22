@@ -35,18 +35,15 @@ LVF
 ├─ mydb
 │  └─ mydb.go
 ├─ public
-│  └─ data
 ├─ README.md
 ├─ router.go
 ├─ service
 │  └─ message.go
-├─ test
-│  ├─ base_api_test.go
-│  ├─ common.go
-│  ├─ interact_api_test.go
-│  ├─ message_server_test.go
-│  └─ social_api_test.go
-└─ tmp
-   └─ main.exe
+└─ test
+   ├─ base_api_test.go
+   ├─ common.go
+   ├─ interact_api_test.go
+   ├─ message_server_test.go
+   └─ social_api_test.go
 
 ```
